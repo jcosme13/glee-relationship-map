@@ -1,0 +1,140 @@
+## Glee Relationship Map by Janay Cosme
+## March 2022
+
+from pyvis.network import Network
+
+net = Network(bgcolor="#222222", font_color="black")
+
+## Node Key: Characters
+# Season 1: #F7FF00 // yellow
+# Season 2: #FF8300 // orange
+# Season 3: #00F7FF // cyan
+# Season 4: #1CBB00 // green
+# Season 5: // purple
+# Season 6: // pink
+
+net.add_node(1, label = "Rachel", color = "#F7FF00", shape = "box")
+net.add_node(2, label = "Finn", color = "#F7FF00", shape = "box")
+net.add_node(3, label = "Kurt", color = "#F7FF00", shape = "box")
+net.add_node(4, label = "Mercedes", color = "#F7FF00", shape = "box")
+net.add_node(5, label = "Tina", color = "#F7FF00", shape = "box")
+net.add_node(6, label = "Artie", color = "#F7FF00", shape = "box")
+net.add_node(7, label = "Puck", color = "#F7FF00", shape = "box")
+net.add_node(8, label = "Quinn", color = "#F7FF00", shape = "box")
+net.add_node(9, label = "Santana", color = "#F7FF00", shape = "box")
+net.add_node(10, label = "Brittany", color = "#F7FF00", shape = "box")
+net.add_node(11, label = "Mike", color = "#F7FF00", shape = "box")
+net.add_node(12, label = "Sam", color = "#FF8300", shape = "box")
+net.add_node(13, label = "Blaine", color = "#FF8300", shape = "box")
+net.add_node(14, label = "Lauren", color = "#FF8300", shape = "box")
+net.add_node(15, label = "Dave", color = "#FF8300", shape = "box")
+net.add_node(16, label = "Will", color = "#F7FF00", shape = "box")
+net.add_node(17, label = "Jesse", color = "#F7FF00", shape = "box")
+net.add_node(18, label = "Terri", color = "#F7FF00", shape = "box")
+net.add_node(19, label = "April", color = "#F7FF00", shape = "box")
+net.add_node(20, label = "Emma", color = "#F7FF00", shape = "box")
+net.add_node(21, label = "Sue", color = "#F7FF00", shape = "box")
+net.add_node(22, label = "Ken", color = "#F7FF00", shape = "box")
+net.add_node(23, label = "Shelby", color = "#F7FF00", shape = "box")
+net.add_node(24, label = "Burt", color = "#F7FF00", shape = "box")
+net.add_node(25, label = "Carole", color = "#F7FF00", shape = "box")
+net.add_node(26, label = "Rod", color = "#F7FF00", shape = "box")
+net.add_node(27, label = "Andrea", color = "#F7FF00", shape = "box")
+net.add_node(28, label = "Becky", color = "#F7FF00", shape = "box")
+net.add_node(29, label = "Carl", color = "#FF8300", shape = "box")
+net.add_node(30, label = "Coach Beiste", color = "#FF8300", shape = "box")
+net.add_node(31, label = "Holly", color = "#FF8300", shape = "box")
+net.add_node(32, label = "Sugar", color = "#00F7FF", shape = "box")
+net.add_node(33, label = "Rory", color = "#00F7FF", shape = "box")
+net.add_node(34, label = "Joe", color = "#00F7FF", shape = "box")
+net.add_node(35, label = "Sebastian", color = "#00F7FF", shape = "box")
+net.add_node(36, label = "Shane", color = "#00F7FF", shape = "box")
+net.add_node(37, label = "Cooter", color = "#00F7FF", shape = "box")
+net.add_node(38, label = "Brody", color = "#1CBB00", shape = "box")
+net.add_node(39, label = "Marley", color = "#1CBB00", shape = "box")
+net.add_node(40, label = "Jake", color = "#1CBB00", shape = "box")
+net.add_node(41, label = "Kitty", color = "#1CBB00", shape = "box")
+net.add_node(42, label = "Ryder", color = "#1CBB00", shape = "box")
+net.add_node(43, label = "Unique", color = "#1CBB00", shape = "box")
+net.add_node(44, label = "Cassandra", color = "#1CBB00", shape = "box")
+net.add_node(45, label = "Betty", color = "#1CBB00", shape = "box")
+net.add_node(46, label = "Adam", color = "#1CBB00", shape = "box")
+
+## Edge Key: Relationship Type
+# Romantic: #FF0000 // red
+# One-Sided Crush: #0042FF // blue
+# Fake Relationship: #8700FF // purple
+
+# romantic relationships
+net.add_edge(1, 2, color="#FF0000")
+net.add_edge(5, 6, color="#FF0000")
+net.add_edge(1, 13, color="#FF0000")
+net.add_edge(2, 8, color="#FF0000")
+net.add_edge(3, 13, color="#FF0000")
+net.add_edge(3, 10, color="#FF0000")
+net.add_edge(6, 10, color="#FF0000")
+net.add_edge(1, 13, color="#FF0000")
+net.add_edge(5, 11, color="#FF0000")
+net.add_edge(12, 4, color="#FF0000")
+net.add_edge(10, 12, color="#FF0000")
+net.add_edge(7, 8, color="#FF0000")
+net.add_edge(9, 10, color="#FF0000")
+net.add_edge(9, 12, color="#FF0000")
+net.add_edge(9, 2, color="#FF0000")
+net.add_edge(9, 7, color="#FF0000")
+net.add_edge(9, 8, color="#FF0000")
+net.add_edge(1, 17, color="#FF0000")
+net.add_edge(16, 18, color="#FF0000")
+net.add_edge(16, 20, color="#FF0000")
+net.add_edge(16, 23, color="#FF0000")
+net.add_edge(3, 15, color="#FF0000")
+net.add_edge(7, 23, color="#FF0000")
+net.add_edge(20, 22, color="#FF0000")
+net.add_edge(21, 21, color="#FF0000")
+net.add_edge(20, 2, color="#FF0000")
+net.add_edge(4, 7, color="#FF0000")
+net.add_edge(7, 14, color="#FF0000")
+net.add_edge(7, 10, color="#FF0000")
+net.add_edge(7, 1, color="#FF0000")
+net.add_edge(12, 8, color="#FF0000")
+net.add_edge(6, 28, color="#FF0000")
+net.add_edge(26, 27, color="#FF0000")
+net.add_edge(21, 26, color="#FF0000")
+net.add_edge(24, 25, color="#FF0000")
+net.add_edge(31, 16, color="#FF0000")
+net.add_edge(29, 20, color="#FF0000")
+net.add_edge(30, 16, color="#FF0000")
+net.add_edge(30, 37, color="#FF0000")
+net.add_edge(37, 21, color="#FF0000")
+net.add_edge(32, 33, color="#FF0000")
+net.add_edge(36, 4, color="#FF0000")
+net.add_edge(38, 1, color="#FF0000")
+net.add_edge(38, 44, color="#FF0000")
+net.add_edge(39, 40, color="#FF0000")
+net.add_edge(40, 41, color="#FF0000")
+net.add_edge(39, 42, color="#FF0000")
+net.add_edge(41, 7, color="#FF0000")
+net.add_edge(45, 6, color="#FF0000")
+net.add_edge(46, 3, color="#FF0000")
+
+# one-sided crushes
+net.add_edge(3, 4, color="#0042FF")
+net.add_edge(3, 2, color="#0042FF")
+net.add_edge(3, 12, color="#0042FF")
+net.add_edge(16, 19, color="#0042FF")
+net.add_edge(21, 16, color="#0042FF")
+net.add_edge(18, 2, color="#0042FF")
+net.add_edge(1, 16, color="#0042FF")
+net.add_edge(5, 13, color="#0042FF")
+net.add_edge(13, 12, color="#0042FF")
+net.add_edge(13, 35, color="#0042FF")
+net.add_edge(32, 6, color="#0042FF")
+net.add_edge(33, 10, color="#0042FF")
+net.add_edge(34, 8, color="#0042FF")
+
+# fake relationships
+net.add_edge(9, 15, color="#8700FF")
+
+net.repulsion(node_distance = 150, spring_length = 100)
+
+net.show("glee-map.html")
