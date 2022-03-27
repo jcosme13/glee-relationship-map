@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Glee Random Relationship Generator</title>
+    <section class="section">
+        <h1 class="title has-text-centered">Glee Random Relationship Generator</h1>
+      </section>
+      <br>
+  </head>
+  <style>
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <body class="has-background-danger-light">
+    <nav class="navbar has-background-danger-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                  <a class="navbar-item" href="/">
+                    Relationship Generator
+                  </a>
+            
+                  <a class="navbar-item" href="/map">
+                    Relationship Map
+                  </a>
+            
+        </div>
+      </nav>
+    <br><br>
+    <div class="container is-fluid">
+        <div class="notification is-danger has-text-centered is-size-2">
+            <form action="/" method="GET">
+                <p>{{ res[0] }} and {{ res[1] }}</p>  
+            </form>
+            
+        </div>
+      </div>
+      <br><br>
+      <div class="buttons is-centered">
+        <button class="button is-link is-light"><a href="/">Again</a></button>
+      </div>
+      
+  </body>
+</html>
