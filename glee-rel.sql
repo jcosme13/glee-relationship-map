@@ -1,22 +1,23 @@
 DROP TABLE IF EXISTS entries;
 CREATE TABLE entries(
     -- ID      INTEGER PRIMARY KEY NOT NULL AUTOINCREMENT,
-    ent     varchar(50) not null
+    ent     varchar(50) not null,
+    img     blob
 );
 
-INSERT INTO entries(ent) VALUES("Rachel");
-INSERT INTO entries(ent) VALUES("Finn");
-INSERT INTO entries(ent) VALUES("Mercedes");
-INSERT INTO entries(ent) VALUES("Kurt");
-INSERT INTO entries(ent) VALUES("Tina");
-INSERT INTO entries(ent) VALUES("Artie");
-INSERT INTO entries(ent) VALUES("Puck");
-INSERT INTO entries(ent) VALUES("Quinn");
-INSERT INTO entries(ent) VALUES("Santana");
-INSERT INTO entries(ent) VALUES("Brittany");
-INSERT INTO entries(ent) VALUES("Mike");
-INSERT INTO entries(ent) VALUES("Matt");
-INSERT INTO entries(ent) VALUES("Will");
+INSERT INTO entries(ent, img) VALUES("Rachel", readfile("static/images/rachel.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Finn", readfile("static/images/finn.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Mercedes", readfile("static/images/mercedes.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Kurt", readfile("static/images/kurt.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Tina", readfile("static/images/tina.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Artie", readfile("static/images/artie.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Puck", readfile("static/images/puck.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Quinn", readfile("static/images/quinn.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Santana", readfile("static/images/santana.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Brittany", readfile("static/images/brittany.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Mike", readfile("static/images/mike.png"));
+INSERT INTO entries(ent, img) VALUES("Matt", readfile("static/images/matt.jpeg"));
+INSERT INTO entries(ent, img) VALUES("Will", readfile("static/images/will.jpeg"));
 INSERT INTO entries(ent) VALUES("Figgins");
 INSERT INTO entries(ent) VALUES("Sue");
 INSERT INTO entries(ent) VALUES("Becky");
