@@ -17,22 +17,22 @@ def home():
     c = conn.cursor()
 
     c.execute('SELECT DISTINCT ent FROM entries ORDER BY RANDOM() LIMIT 2')
-    results = c.fetchall()
+    res = c.fetchall()
 
-    res = convertTuple(results)
+    print(res[0])
+    print(res[1])
 
-    c.execute('SELECT img FROM entries WHERE ent="Rachel"')
-    img = c.fetchall()
+    c.execute('SELECT img FROM entries WHERE ent=?', res[0])
+    img1 = c.fetchall()
+    img1 = convertTuple(img1[0])
 
-    #full_filename = os.path.join(app.config['UPLOAD_FOLDER'], img)
-    #print(img)
-    #print(full_filename)
+    c.execute('SELECT img FROM entries WHERE ent=?', res[1])
+    img2 = c.fetchall()
+    img2 = convertTuple(img2[0])
 
-    img = convertTuple(img[0])
-    print(img)
-    
+    res = convertTuple(res) 
     # Render the homepage 
-    return render_template("/index.html", res=res, img=img)
+    return render_template("/index.html", res=res, img1=img1, img2=img2)
 
 @app.route('/map', methods = ['GET'])
 def map():

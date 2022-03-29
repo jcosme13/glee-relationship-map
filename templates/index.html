@@ -26,9 +26,12 @@
       </nav>
     <br><br>
     <div class="container is-fluid">
-        <div class="notification is-danger has-text-centered is-size-2">
+        <div class="notification is-danger has-text-centered is-size-2 is-centered">
             <form action="/" method="GET">
-                <p>{{ res[0] }} and {{ res[1] }}</p>  
+                <p>
+                  <img src = "{{ url_for('static',filename=img1) }}">
+                  {{ res[0] }} and {{ res[1] }}
+                  <img src = "{{ url_for('static',filename=img2) }}"></p>  
             </form>
             
         </div>
@@ -37,6 +40,6 @@
       <div class="buttons is-centered">
         <button class="button is-link is-light"><a href="/">Again</a></button>
       </div>
-     <img src = "{{ url_for('static',filename=img) }}">
+     
   </body>
 </html>
