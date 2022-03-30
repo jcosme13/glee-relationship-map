@@ -2,7 +2,7 @@
   <head>
     <title>Glee Random Relationship Generator</title>
     <section class="section">
-        <h1 class="title has-text-centered">Glee Random Relationship Generator</h1>
+        <h1 class="title has-text-centered is-size-1">Glee Random Relationship Generator</h1>
       </section>
       <br>
   </head>
@@ -24,14 +24,29 @@
             
         </div>
       </nav>
-    <br><br>
+    <br>
     <div class="container is-fluid">
         <div class="notification is-danger has-text-centered is-size-2 is-centered">
             <form action="/" method="GET">
-                <p>
-                  <img src = "{{ url_for('static',filename=img1) }}">
-                  {{ res[0] }} and {{ res[1] }}
-                  <img src = "{{ url_for('static',filename=img2) }}"></p>  
+              <div class="columns">
+          
+                <div class="column is-one-third"><img src = "{{ url_for('static',filename=img1) }}"></div>
+              
+                <div class="column">
+                  <div class="column">
+                    <p class="bd-notification is-danger"></p>
+                    <div class="columns is-mobile">
+                      <div class="column is-full"><br><br>
+                        <p class="bd-notification is-danger">{{ res[0] }} and {{ res[1] }}</p>
+                      </div>
+              
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <img src = "{{ url_for('static',filename=img2) }}"></div>
+              </div>
+               
             </form>
             
         </div>
