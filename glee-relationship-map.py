@@ -10,7 +10,7 @@ net = Network(bgcolor="#222222", font_color="black")
 # Season 2: #FF8300 // orange
 # Season 3: #00F7FF // cyan
 # Season 4: #1CBB00 // green
-# Season 5: // purple
+# Season 5: #7400CE // purple
 # Season 6: // pink
 
 net.add_node(1, label = "Rachel", color = "#F7FF00", shape = "box")
@@ -59,6 +59,12 @@ net.add_node(43, label = "Unique", color = "#1CBB00", shape = "box")
 net.add_node(44, label = "Cassandra", color = "#1CBB00", shape = "box")
 net.add_node(45, label = "Betty", color = "#1CBB00", shape = "box")
 net.add_node(46, label = "Adam", color = "#1CBB00", shape = "box")
+net.add_node(47, label = "Dani", color = "#7400CE", shape = "box")
+net.add_node(48, label = "Penny", color = "#7400CE", shape = "box")
+net.add_node(49, label = "Bree", color = "#7400CE", shape = "box")
+net.add_node(50, label = "Elliott", color = "#7400CE", shape = "box")
+net.add_node(51, label = "Biff", color = "#7400CE", shape = "box")
+net.add_node(52, label = "Matt", color = "#F7FF00", shape = "box")
 
 ## Edge Key: Relationship Type
 # Romantic: #FF0000 // red
@@ -116,6 +122,12 @@ net.add_edge(39, 42, color="#FF0000")
 net.add_edge(41, 7, color="#FF0000")
 net.add_edge(45, 6, color="#FF0000")
 net.add_edge(46, 3, color="#FF0000")
+net.add_edge(6, 41, color="#FF0000")
+net.add_edge(9, 47, color="#FF0000")
+net.add_edge(40, 49, color="#FF0000")
+net.add_edge(12, 48, color="#FF0000")
+net.add_edge(5, 12, color="#FF0000")
+net.add_edge(8, 51, color="#FF0000")
 
 # one-sided crushes
 net.add_edge(3, 4, color="#0042FF")
@@ -131,6 +143,7 @@ net.add_edge(13, 35, color="#0042FF")
 net.add_edge(32, 6, color="#0042FF")
 net.add_edge(33, 10, color="#0042FF")
 net.add_edge(34, 8, color="#0042FF")
+net.add_edge(43, 42, color="#0042FF")
 
 # fake relationships
 net.add_edge(9, 15, color="#8700FF")
